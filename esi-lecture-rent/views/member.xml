@@ -1,0 +1,18 @@
+<odoo>
+
+    <!-- Form view RES PARTNER-->
+    <record id="inherited_member_view" model="ir.ui.view">
+        <field name="priority">20</field>
+        <field name="name">Membre</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <sheet>
+                <group>
+                    <field name="number"/>
+                    <field name="rent_ids"/>
+                </group>
+            </sheet>
+        </field>
+    </record>
+</odoo>

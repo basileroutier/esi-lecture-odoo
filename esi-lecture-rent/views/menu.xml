@@ -1,0 +1,24 @@
+<odoo>
+<!-- Actions for the menu items -->
+    <act_window id="action_esi_lecture_livre_rent"
+                name="Esi-lecture Rent"
+                res_model="esi.lecture.livre.rent"
+                view_mode="tree,form"
+    />
+
+    <act_window id="action_member_res_partner"
+                name="Membre"
+                res_model="res.partner"
+                view_mode="tree,form"
+    />
+
+    <!-- Third level menu items -->
+    <menuitem id="menu_esi_lecture_livre_rent"
+              name="Emprunt"
+              parent="esi_lecture.auteur-menu-child"
+              action="action_esi_lecture_livre_rent"/>
+    <menuitem id="menu_member_res_partner"
+              name="Membre"
+              parent="esi_lecture.auteur-menu-child"
+              action="action_member_res_partner"/>
+</odoo>
